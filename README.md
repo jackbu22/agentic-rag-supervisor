@@ -96,18 +96,6 @@ python ingest_papers.py --status
 python agentic_rag_supervisor_demo.py -q "SK hynix 관점에서 HBM4/PIM/CXL 경쟁사 전략 리포트를 작성해줘"
 ```
 
-## Retrieval Benchmark
-번들된 QA 셋(`data/demo_qa_set.json`)을 기준으로 여러 리트리버를 비교할 수 있습니다.
-```bash
-python scripts/eval_retrieval.py
-```
-
-데모 런타임에서 렉시컬 리트리버로 강제 전환하려면(옵션):
-```bash
-export ARS_RETRIEVER_MODE=bm25      # 또는 tfidf_word
-python agentic_rag_supervisor_demo.py -q "..."
-```
-
 ## Contributors
 - 김건우: Prompt Engineering, PDF Parsing, RAG Agent, 엔드포인트 설계
 - 배은서: Agent 아키텍쳐 Design, RAG Agent
