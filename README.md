@@ -98,4 +98,4 @@ python agentic_rag_supervisor_demo.py -q "SK hynix 관점에서 HBM4/PIM/CXL 경
 
 ## Contributors
 - 김건우: Prompt Engineering, PDF Parsing, RAG Agent, 엔드포인트 설계
-- 배은서: Agent Design, RAG Agent
+- 배은서: Agent 아키텍쳐 Design, RAG Agent
