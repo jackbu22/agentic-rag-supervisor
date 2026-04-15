@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,6 +22,11 @@ VECTORSTORE: Optional[FAISS] = None
 BM25: Optional[BM25Retriever] = None
 COMPANY_VECTORSTORES: Dict[str, FAISS] = {}
 _INITIALIZED = False
+
+# ── optional lexical retrievers (BM25 / TF-IDF) ─────────────────────────────
+_BM25 = None
+_TFIDF_WORD = None
+_TFIDF_WORD_X = None
 
 
 def load_sources() -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
@@ -106,11 +112,35 @@ def load_or_build_retrievers(chunks: List[Document]) -> Tuple[Optional[FAISS], O
 
 def initialize(force: bool = False) -> None:
     global _INITIALIZED, SOURCE_RECORDS, QA_ROWS, CHUNKS, VECTORSTORE, BM25, COMPANY_VECTORSTORES
+    global _BM25, _TFIDF_WORD, _TFIDF_WORD_X
     if _INITIALIZED and not force:
         return
     SOURCE_RECORDS, QA_ROWS = load_sources()
     CHUNKS = build_chunks(SOURCE_RECORDS)
     VECTORSTORE, BM25, COMPANY_VECTORSTORES = load_or_build_retrievers(CHUNKS)
+
+    # Lexical indexes (doc-level). Useful for benchmarking and as a fallback when
+    # dense/FAISS isn't available.
+    try:
+        import re
+
+        from rank_bm25 import BM25Okapi
+        from sklearn.feature_extraction.text import TfidfVectorizer
+
+        token_re = re.compile(r"[A-Za-z0-9_]+")
+
+        def tokenize(text: str) -> list[str]:
+            return token_re.findall(text.lower())
+
+        doc_texts = [(str(r.get("title", "")) + "\n" + str(r.get("content", ""))).strip() for r in SOURCE_RECORDS]
+        _BM25 = BM25Okapi([tokenize(t) for t in doc_texts])
+        _TFIDF_WORD = TfidfVectorizer(lowercase=True, stop_words="english", ngram_range=(1, 2), min_df=1)
+        _TFIDF_WORD_X = _TFIDF_WORD.fit_transform(doc_texts)
+    except Exception:
+        _BM25 = None
+        _TFIDF_WORD = None
+        _TFIDF_WORD_X = None
+
     _INITIALIZED = True
 
 
@@ -185,6 +215,10 @@ def hybrid_search(
     require_recent: bool = True,
 ) -> List[Document]:
     initialize()
+    mode = os.environ.get("ARS_RETRIEVER_MODE", "hybrid").strip().lower()
+    if mode in {"bm25", "tfidf_word"} and _BM25 is not None and _TFIDF_WORD is not None and _TFIDF_WORD_X is not None:
+        return _lexical_search(query, mode=mode, top_k=top_k, company=company)
+
     tech = tech_hint or detect_tech_hint(query)
     dense_docs: List[Document] = []
     sparse_docs: List[Document] = []
@@ -210,6 +244,53 @@ def hybrid_search(
         if len(out) >= min(top_k, 3):
             fused = out
     return fused[:top_k]
+
+
+def _lexical_search(query: str, mode: str, top_k: int, company: Optional[str]) -> List[Document]:
+    """Doc-level lexical retrieval over SOURCE_RECORDS."""
+    assert mode in {"bm25", "tfidf_word"}
+
+    if not SOURCE_RECORDS:
+        return []
+
+    rows = SOURCE_RECORDS
+    if company:
+        rows = [r for r in rows if r.get("company") == company]
+        if not rows:
+            rows = SOURCE_RECORDS
+
+    # Map subset back to original indices for shared matrices
+    id_to_idx: dict[str, int] = {str(r["doc_id"]): i for i, r in enumerate(SOURCE_RECORDS)}
+    candidate_ids = [str(r["doc_id"]) for r in rows]
+    candidate_indices = [id_to_idx[d] for d in candidate_ids if d in id_to_idx]
+
+    if mode == "bm25":
+        import re
+
+        token_re = re.compile(r"[A-Za-z0-9_]+")
+        tokens = token_re.findall(query.lower())
+        scores = _BM25.get_scores(tokens)
+        ranked = sorted(candidate_indices, key=lambda i: scores[i], reverse=True)[:top_k]
+    else:
+        qv = _TFIDF_WORD.transform([query])
+        sims = (_TFIDF_WORD_X @ qv.T).toarray().ravel()
+        ranked = sorted(candidate_indices, key=lambda i: sims[i], reverse=True)[:top_k]
+
+    out: List[Document] = []
+    for i in ranked:
+        r = SOURCE_RECORDS[i]
+        meta = {
+            "doc_id": r.get("doc_id"),
+            "chunk_id": f"doc-{r.get('doc_id')}",
+            "title": r.get("title"),
+            "technology": r.get("technology"),
+            "company": r.get("company"),
+            "source_type": r.get("source_type"),
+            "published_at": r.get("published_at"),
+            "source_url": r.get("source_url"),
+        }
+        out.append(Document(page_content=str(r.get("content", "")), metadata=meta))
+    return out
 
 
 def literal_source_matches(target_techs: List[str], target_companies: List[str]) -> List[Document]:
@@ -245,4 +326,3 @@ def evaluate_retrieval(qa_rows: List[Dict[str, Any]], k: int = 5) -> Dict[str, f
         reciprocal_ranks.append(rr)
     n = max(len(qa_rows), 1)
     return {"hit_rate_at_k": hit_count / n, "mrr": sum(reciprocal_ranks) / n}
-
