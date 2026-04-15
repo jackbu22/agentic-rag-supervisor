@@ -1,0 +1,32 @@
+﻿[
+  {
+    "id": "Q1",
+    "question": "What are the main differences between processing-using-memory and processing-near-memory approaches?",
+    "technology": "PIM",
+    "ground_truth_doc_ids": ["PAPER-2012.03112", "PAPER-2105.03814"]
+  },
+  {
+    "id": "Q2",
+    "question": "Which evidence suggests that Micron is progressing from pilot to broader customer sampling in HBM4?",
+    "technology": "HBM4",
+    "ground_truth_doc_ids": ["MIC-2026-HBM4-PILOT"]
+  },
+  {
+    "id": "Q3",
+    "question": "What CXL protocol components are emphasized in foundational references, and how do they affect deployment maturity?",
+    "technology": "CXL",
+    "ground_truth_doc_ids": ["PAPER-2306.11227", "PAPER-2412.20249"]
+  },
+  {
+    "id": "Q4",
+    "question": "What signals indicate Samsung is still in an early to mid maturity phase for HBM4 packaging innovation?",
+    "technology": "HBM4",
+    "ground_truth_doc_ids": ["SMS-2025-HBM4-PATENT"]
+  },
+  {
+    "id": "Q5",
+    "question": "Summarize evidence that SK hynix is moving toward pre-production readiness in HBM4 while also investing in CXL expansion.",
+    "technology": "HBM4",
+    "ground_truth_doc_ids": ["SKH-2026-HBM4-SAMPLE", "SKH-2025-CXL-EXPANSION"]
+  }
+]

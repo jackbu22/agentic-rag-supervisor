@@ -1,0 +1,542 @@
+[
+  {
+    "doc_id": "PAPER-2012.03112",
+    "title": "A Modern Primer on Processing in Memory",
+    "technology": "PIM",
+    "company": "Academic",
+    "source_type": "paper",
+    "published_at": "2020-12-06",
+    "source_url": "https://arxiv.org/abs/2012.03112",
+    "content": "This survey explains processing-in-memory design space, including analog and digital approaches. It emphasizes that reduced data movement can improve energy efficiency and latency, but software toolchains and programming models are still major adoption barriers."
+  },
+  {
+    "doc_id": "PAPER-2105.03814",
+    "title": "Benchmarking a New Paradigm: Experimental Analysis of a Real PIM Architecture",
+    "technology": "PIM",
+    "company": "Academic",
+    "source_type": "paper",
+    "published_at": "2021-05-10",
+    "source_url": "https://arxiv.org/abs/2105.03814",
+    "content": "The paper reports experimental results from UPMEM hardware and shows workload-dependent speedup and energy benefits. It also documents programming overhead and data partitioning constraints that affect practical gains in production systems."
+  },
+  {
+    "doc_id": "PAPER-2310.09385",
+    "title": "PIM-GPT: A Hybrid Process-in-Memory Accelerator for Autoregressive Transformers",
+    "technology": "PIM",
+    "company": "Academic",
+    "source_type": "paper",
+    "published_at": "2023-10-14",
+    "source_url": "https://arxiv.org/abs/2310.09385",
+    "content": "PIM-GPT proposes a hybrid accelerator for transformer inference by balancing memory-centric and compute-centric operations. It suggests that selective offloading can improve throughput per watt when model and memory placement are optimized."
+  },
+  {
+    "doc_id": "PAPER-2306.11227",
+    "title": "An Introduction to the Compute Express Link (CXL) Interconnect",
+    "technology": "CXL",
+    "company": "Academic",
+    "source_type": "paper",
+    "published_at": "2023-06-19",
+    "source_url": "https://arxiv.org/abs/2306.11227",
+    "content": "This introduction explains CXL.io, CXL.cache, and CXL.mem protocol roles. It outlines coherence benefits and system-level memory expansion opportunities while noting interoperability and ecosystem maturity as key deployment factors."
+  },
+  {
+    "doc_id": "PAPER-2412.20249",
+    "title": "Next-Gen Computing Systems with CXL: a Comprehensive Survey",
+    "technology": "CXL",
+    "company": "Academic",
+    "source_type": "paper",
+    "published_at": "2024-12-30",
+    "source_url": "https://arxiv.org/abs/2412.20249",
+    "content": "The survey covers software stack evolution, composable memory pools, and disaggregated data center architecture with CXL. It highlights active work on latency overhead reduction, fabric management, and reliability controls."
+  },
+  {
+    "doc_id": "SKH-2026-HBM4-SAMPLE",
+    "title": "SK hynix updates HBM4 sample roadmap for AI accelerators",
+    "technology": "HBM4",
+    "company": "SK hynix",
+    "source_type": "press_release",
+    "published_at": "2026-03-20",
+    "source_url": "https://example.com/skhynix/hbm4-sample-2026",
+    "content": "The company shared an HBM4 engineering sample update and highlighted thermal design and power optimization progress. Customer validation and ecosystem alignment were emphasized, suggesting movement toward pre-production readiness."
+  },
+  {
+    "doc_id": "SKH-2025-CXL-EXPANSION",
+    "title": "SK hynix expands CXL memory module portfolio",
+    "technology": "CXL",
+    "company": "SK hynix",
+    "source_type": "product_announcement",
+    "published_at": "2025-09-05",
+    "source_url": "https://example.com/skhynix/cxl-expansion-2025",
+    "content": "SK hynix announced expanded CXL memory module options and software enablement updates for enterprise systems. The update includes validation milestones with platform partners and staged deployment guidance for production clusters."
+  },
+  {
+    "doc_id": "SMS-2025-HBM4-PATENT",
+    "title": "Samsung files packaging and thermal patent family linked to advanced HBM stacks",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "patent",
+    "published_at": "2025-11-12",
+    "source_url": "https://example.com/samsung/hbm4-patent-2025",
+    "content": "The filing describes bonding and heat-dissipation structures for high-layer memory stacks. The disclosure is early-stage and does not provide production yield data, but it signals active exploration of packaging bottlenecks."
+  },
+  {
+    "doc_id": "SMS-2025-PIM-RESEARCH",
+    "title": "Samsung presents near-memory compute research for transformer workloads",
+    "technology": "PIM",
+    "company": "Samsung",
+    "source_type": "conference",
+    "published_at": "2025-07-18",
+    "source_url": "https://example.com/samsung/pim-research-2025",
+    "content": "The presentation reports prototype-level improvements for selected attention kernels and discusses compiler constraints. Results indicate promising gains in controlled conditions, while broad workload generalization remains unresolved."
+  },
+  {
+    "doc_id": "MIC-2026-HBM4-PILOT",
+    "title": "Micron discusses HBM4 pilot line and partner validation",
+    "technology": "HBM4",
+    "company": "Micron",
+    "source_type": "earnings_call",
+    "published_at": "2026-02-10",
+    "source_url": "https://example.com/micron/hbm4-pilot-2026",
+    "content": "Micron described pilot-line progress and target qualifications with accelerator partners. The commentary implies transition from lab qualification toward broader customer sampling, with ramp timing dependent on yield and demand balance."
+  },
+  {
+    "doc_id": "MIC-2026-CXL-PROD",
+    "title": "Micron announces production-grade CXL memory expansion products",
+    "technology": "CXL",
+    "company": "Micron",
+    "source_type": "product_announcement",
+    "published_at": "2026-01-22",
+    "source_url": "https://example.com/micron/cxl-production-2026",
+    "content": "Micron introduced CXL products positioned for production deployment and highlighted software ecosystem interoperability. The announcement references deployment pilots with cloud and enterprise customers in memory-intensive workloads."
+  },
+  {
+    "doc_id": "JEDEC-2025-HBM4-STANDARD",
+    "title": "JEDEC working update for next-generation high-bandwidth memory standardization",
+    "technology": "HBM4",
+    "company": "JEDEC",
+    "source_type": "standard",
+    "published_at": "2025-06-30",
+    "source_url": "https://example.com/jedec/hbm4-standard-2025",
+    "content": "The standards update outlines interface, power, and reliability priorities for next-generation HBM. Draft alignment status and interoperability expectations are discussed, but implementation details remain vendor-specific."
+  },
+  {
+    "doc_id": "IND-2026-HYBRID-BONDING",
+    "title": "Hybrid bonding ecosystem partnerships accelerate advanced memory packaging",
+    "technology": "HBM4",
+    "company": "Industry",
+    "source_type": "industry_report",
+    "published_at": "2026-04-01",
+    "source_url": "https://example.com/industry/hybrid-bonding-2026",
+    "content": "An industry report describes equipment and process co-optimization among materials, bonding, and memory vendors. It suggests that packaging advances may become a key differentiator for next-generation HBM cost-performance."
+  },
+  {
+    "doc_id": "SAMSUNG-2026-7F1A3467",
+    "title": "2504.09775v2",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/2504.09775v2.pdf",
+    "content": "Understanding and Optimizing Multi-Stage AI Inference Pipelines Abhimanyu Rajeshkumar Bambhaniya1, Hanjiang Wu1, Suvinay Subramanian2, Sudarshan Srinivasan3, Souvik Kundu4, Amir Yazdanbakhsh5, Midhilesh Elavazhagan3, Madhu Kumar3, Tushar Krishna1 1Georgia Institute of Technology, 2Google, 3Intel, 4Intel Labs 5Google DeepMind, Corresponding email: abambhaniya3@gatech.edu Abstract—The rapid evolution of Large Language Models (LLMs) has driven the need for increasingly sophisticated inference pipelines and hardware platforms. Modern LLM serving extends beyond traditional prefill-decode workflows,"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-52358B39",
+    "title": "CXL 4.0 and the Interconnect Wars",
+    "technology": "CXL",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/CXL 4.0 and the Interconnect Wars.pdf",
+    "content": "CXL 4.0 and the Interconnect Wars: How AI Memory Is Reshaping Data Center Architecture CXL 4.0 specification released Nov 18 with PCIe 7.0, 128 GT/s, bundled ports. Panmnesia ships first CXL 3.2 fabric switch. UALink, Ultra Ethernet, Huawei UB-Mesh compete. Blake Crosley Jan 16, 20266 min readDisclaimer December 12, 2025 December 2025 Update: The CXL Consortium released CXL 4.0 on November 18, doubling bandwidth to 128 GT/s with PCIe 7.0 and introducing bundled ports for 1.5 TB/s connections. Panmnesia began sampling the industry's first CXL 3.2 fabric switch with port-based routing. Meanwhile"
+  },
+  {
+    "doc_id": "SAMSUNG-2025-2D803D1D",
+    "title": "CXL_4.0-Webinar_December-2025_FINAL",
+    "technology": "CXL",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/CXL_4.0-Webinar_December-2025_FINAL.pdf",
+    "content": "Introducing the CXL 4.0 Specification December 4, 2025 CXL Board of Directors 280+ Member Companies Industry Open Standard for High Speed Communications Compute Express Link® and CXL® are trademarks of the Compute Express Link Consortium. 12/3/2025 CXL Specification Release Timeline Compute Express Link® and CXL® are registered trademarks of the Compute Express Link Consortium. September 2019 CXL 1.1 Specification Released November 2020 CXL 2.0 Specification Released August 2022 CXL 3.0 Specification Released March 2019 CXL 1.0 Specification Released November 2023 CXL 3.1 Specification Release"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-D4439E37",
+    "title": "JESD270-4A",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/JESD270-4A.pdf",
+    "content": "JEDEC STANDARD High Bandwidth Memory (HBM4) DRAM JESD270-4A (Revision of JESD270-4, April 2025) November 2025 JEDEC SOLID STATE TECHNOLOGY ASSOCIATION Downloaded by bae baessi (beseo007@gmail.com) on Apr 14, 2026, 5:34 pm PDT skala NOTICE JEDEC standards and publications contain material that has been prepared, reviewed, and approved through the JEDEC Board of Directors level and subsequently reviewed and approved by the JEDEC legal counsel. JEDEC standards and publications are designed to serve the public interest through eliminating misunderstandings between manufacturers and purchasers, fac"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-54A153BD",
+    "title": "Samsung Unveils HBM4E, Showcasing Comprehensive AI Solutions, NVIDIA Partnership and Vision at NVIDIA GTC 2026",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/Samsung Unveils HBM4E, Showcasing Comprehensive AI Solutions, NVIDIA Partnership and Vision at NVIDIA GTC 2026.pdf",
+    "content": "Samsung Unveils HBM4E, Showcasing Comprehensive AI Solutions, NVIDIA Partnership and Vision at NVIDIA GTC 2026 Samsung supercharges the development of AI Infrastructure and AI Factories through wide-ranging compute solutions for datacenter, physical and on-device AI Industry-first commercial HBM4 and its successor HBM4E to be displayed, highlighting maximized performance, reliability and energy efficiency for next-generation datacenters Samsung to present on strategic AI collaboration with NVIDIA in semiconductor engineering innovation spanning from R&D and design to manufacturing Samsung Elec"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-B7ACE856",
+    "title": "삼성전자, 세계 최초 업계 최고 성능의 HBM4 양산 출하",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2028-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/삼성전자, 세계 최초 업계 최고 성능의 HBM4 양산 출하.pdf",
+    "content": "삼성전자, 세계 최초 업계 최고 성능의 HBM4 양산 출하 삼성전자가 세계 최초로 업계 최고 성능의 HBM4를 양산 출하하며, 본격적인 HBM4 시장 선점에 나섰다. 삼성전자는 HBM4 개발 착수 단계부터 JEDEC 기준을 상회하는 성능 목표를 설정하고 개발을 추진해왔으며, 이번 제품에는 최선단 공정 1c D램(10나노급 6세대)을 선제적으로 도입해 재설계 없이 양산 초기부터 안정적인 수율과 업계 최고 수준의 성능을 확보했다. * JEDEC(Joint Electron Device Engineering Council): 반도체 표준을 제정하는 국제 산업 표준 기구 삼성전자 메모리개발담당 황상준 부사장은 “삼성전자 HBM4는 기존에 검증된 공정을 적용하던 전례를 깨고 1c D램 및 Foundry 4나노와 같은 최선단 공정을 적용했다”며, “공정 경쟁력과 설계 개선을 통해 성능 확장을 위한 여력을 충분히 확보함으로써, 고객의 성능 상향 요구를 적기에 충족할 수 있었다”고 말했다. 11.7Gbps 데이터 처리 성능 안정적 확보…최대 13Gbps까지 구현 삼성전자는 HBM4 기술 경쟁력 강화를 위해 1c D램을 적용하는 한편, 베이스 다이의 특성을 고려해 성능과 전력"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-93490718",
+    "title": "삼성전자, 엔비디아와 함께 '업계 최고 수준 반도체 AI 팩토리' 구축",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/삼성전자, 엔비디아와 함께 '업계 최고 수준 반도체 AI 팩토리' 구축.pdf",
+    "content": "삼성전자, 엔비디아와 함께 '업계 최고 수준 반도체 AI 팩토리' 구축 업계 최고 수준 반도체 AI 팩토리 구축… 글로벌 제조 패러다임 전환 삼성전자는 31일 엔비디아와의 전략적 협력을 통해 반도체 제조의 새로운 패러다임을 제시할 ‘반도체 AI 팩토리’를 구축한다고 밝혔다. 삼성전자는 메모리∙시스템반도체∙파운드리를 아우르는 업계 최대 수준의 반도체 제조 인프라를 갖춘 종합 반도체 기업이다. 삼성전자는 종합반도체 기업으로서의 역량과 엔비디아의 GPU 기반 AI 기술의 시너지를 통해 업계 최고 수준의 ‘반도체 AI 팩토리’를 구축, 반도체를 비롯한 글로벌 제조 산업의 패러다임 전환을 주도해 나갈 계획이다. 이를 위해 삼성전자는 향후 수년간 5만개 이상의 엔비디아 GPU를 도입해 AI 팩토리 인프라를 확충하고, 엔비디아의 시뮬레이션 라이브러리 옴니버스(Omniverse) 기반 디지털 트윈 제조 환경 구현을 가속화할 예정이다. 삼성전자가 추진하는 AI 팩토리는 반도체 제조 과정에서 생성되는 모든 데이터를 실시간으로 수집해 스스로 학습하고 판단하는 지능형 제조 혁신 플랫폼이다. AI 팩토리는 ▲설계 ▲공정 ▲운영 ▲장비 ▲품질관리 등 반도체 설계와 생산을 아우르는 모"
+  },
+  {
+    "doc_id": "SAMSUNG-2026-58F4B34A",
+    "title": "삼성전자·AMD, 차세대 AI 메모리 솔루션 협력 확대",
+    "technology": "HBM4",
+    "company": "Samsung",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/samsung/삼성전자·AMD, 차세대 AI 메모리 솔루션 협력 확대.pdf",
+    "content": "삼성전자·AMD, 차세대 AI 메모리 솔루션 협력 확대 삼성전자는 18일 평택사업장에서 미국 AI 반도체 기업 AMD와 차세대 AI 메모리, 컴퓨팅 기술 분야 협력을 확대하는 업무협약(MOU)을 체결했다. 협약식에는 전영현 삼성전자 DS부문장, 리사 수 AMD CEO를 비롯한 양사 경영진들이 참석했다. 전영현 DS부문장은 “삼성과 AMD는 AI 컴퓨팅 발전이라는 공통된 목표를 공유하고 있으며, 이번 협약으로 양사 협력 범위가 확대될 것”이라며, “▲업계를 선도하는 HBM4 ▲차세대 메모리 아키텍처 ▲ 최첨단 파운드리·패키징 기술까지 삼성은 AMD의 AI 로드맵을 지원할 수 있는 독보적인 턴키 역량을 보유하고 있다”고 강조했다. 리사 수 AMD CEO는 “차세대 AI 인프라 구현을 위해서는 업계 전반의 긴밀한 협력이 필수적”이라며 “삼성의 첨단 메모리 기술 리더십과 AMD의 ▲Instinct GPU ▲EPYC CPU ▲랙 스케일 플랫폼을 결합하게 돼 매우 기쁘다”고 말했다. 삼성전자는 AMD AI 가속기에 탑재되는 HBM4 우선 공급업체로 지정됐다. 이에 따라 삼성전자는 AMD의 차세대 AI 가속기 ‘Instinct MI455X’ GPU에 업계 최고 성능 HB"
+  },
+  {
+    "doc_id": "SKHYNIX-2026-7F1A3467",
+    "title": "2504.09775v2",
+    "technology": "HBM4",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/2504.09775v2.pdf",
+    "content": "Understanding and Optimizing Multi-Stage AI Inference Pipelines Abhimanyu Rajeshkumar Bambhaniya1, Hanjiang Wu1, Suvinay Subramanian2, Sudarshan Srinivasan3, Souvik Kundu4, Amir Yazdanbakhsh5, Midhilesh Elavazhagan3, Madhu Kumar3, Tushar Krishna1 1Georgia Institute of Technology, 2Google, 3Intel, 4Intel Labs 5Google DeepMind, Corresponding email: abambhaniya3@gatech.edu Abstract—The rapid evolution of Large Language Models (LLMs) has driven the need for increasingly sophisticated inference pipelines and hardware platforms. Modern LLM serving extends beyond traditional prefill-decode workflows,"
+  },
+  {
+    "doc_id": "SKHYNIX-2026-F1B02D7A",
+    "title": "2512.04449v1",
+    "technology": "CXL",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/2512.04449v1.pdf",
+    "content": "Offloading to CXL-based Computational Memory Suyeon Lee School of Computer Science Georgia Institute of Technology Atlanta, USA sylee0506@gatech.edu Kangkyu Park Memory Systems Research SK hynix Seongnam, Republic of Korea kangkyu.park@sk.com Kwangsik Shin Memory Systems Research SK hynix Seongnam, Republic of Korea kwangsik.shin@sk.com Ada Gavrilovska School of Computer Science Georgia Institute of Technology Atlanta, USA ada@cc.gatech.edu This manuscript is a pre-publication version and may differ from the final published form. Abstract—CXL-based Computational Memory (CCM) enables near-memor"
+  },
+  {
+    "doc_id": "SKHYNIX-2026-52358B39",
+    "title": "CXL 4.0 and the Interconnect Wars",
+    "technology": "CXL",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/CXL 4.0 and the Interconnect Wars.pdf",
+    "content": "CXL 4.0 and the Interconnect Wars: How AI Memory Is Reshaping Data Center Architecture CXL 4.0 specification released Nov 18 with PCIe 7.0, 128 GT/s, bundled ports. Panmnesia ships first CXL 3.2 fabric switch. UALink, Ultra Ethernet, Huawei UB-Mesh compete. Blake Crosley Jan 16, 20266 min readDisclaimer December 12, 2025 December 2025 Update: The CXL Consortium released CXL 4.0 on November 18, doubling bandwidth to 128 GT/s with PCIe 7.0 and introducing bundled ports for 1.5 TB/s connections. Panmnesia began sampling the industry's first CXL 3.2 fabric switch with port-based routing. Meanwhile"
+  },
+  {
+    "doc_id": "SKHYNIX-2025-2D803D1D",
+    "title": "CXL_4.0-Webinar_December-2025_FINAL",
+    "technology": "CXL",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/CXL_4.0-Webinar_December-2025_FINAL.pdf",
+    "content": "Introducing the CXL 4.0 Specification December 4, 2025 CXL Board of Directors 280+ Member Companies Industry Open Standard for High Speed Communications Compute Express Link® and CXL® are trademarks of the Compute Express Link Consortium. 12/3/2025 CXL Specification Release Timeline Compute Express Link® and CXL® are registered trademarks of the Compute Express Link Consortium. September 2019 CXL 1.1 Specification Released November 2020 CXL 2.0 Specification Released August 2022 CXL 3.0 Specification Released March 2019 CXL 1.0 Specification Released November 2023 CXL 3.1 Specification Release"
+  },
+  {
+    "doc_id": "SKHYNIX-2026-07AFCA26",
+    "title": "Challenges and Research Directions for Large Language Model Inference Hardware",
+    "technology": "HBM4",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/Challenges and Research Directions for Large Language Model Inference Hardware.pdf",
+    "content": "​Challenges and Research Directions​ ​for Large Language Model Inference Hardware​ ​Xiaoyu Ma and David Patterson, Google​ ​We highlight four promising research opportunities to improve​​Large Language Model​​inference for datacenter​ ​AI:​​High Bandwidth Flash​​for 10X memory capacity with​​HBM-like bandwidth; Processing-Near-Memory and​ ​3D memory-logic stacking for high memory bandwidth; and low-latency interconnect to speedup​ ​communication. We also review their applicability for mobile devices.​ ​INTRODUCTION​ ​When one author started his career in 1976, ~40% of the papers at computer ar"
+  },
+  {
+    "doc_id": "SKHYNIX-2026-D4439E37",
+    "title": "JESD270-4A",
+    "technology": "HBM4",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/JESD270-4A.pdf",
+    "content": "JEDEC STANDARD High Bandwidth Memory (HBM4) DRAM JESD270-4A (Revision of JESD270-4, April 2025) November 2025 JEDEC SOLID STATE TECHNOLOGY ASSOCIATION Downloaded by bae baessi (beseo007@gmail.com) on Apr 14, 2026, 5:34 pm PDT skala NOTICE JEDEC standards and publications contain material that has been prepared, reviewed, and approved through the JEDEC Board of Directors level and subsequently reviewed and approved by the JEDEC legal counsel. JEDEC standards and publications are designed to serve the public interest through eliminating misunderstandings between manufacturers and purchasers, fac"
+  },
+  {
+    "doc_id": "SKHYNIX-2025-AFB2AF7B",
+    "title": "SK하이닉스, ‘슈퍼컴퓨팅 2025’서 HBM4·차 세대 스토리지 등 AI 메모리 라인업 공개",
+    "technology": "HBM4",
+    "company": "SK hynix",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/skhynix/SK하이닉스, ‘슈퍼컴퓨팅 2025’서 HBM4·차 세대 스토리지 등 AI 메모리 라인업 공개.pdf",
+    "content": "SK하이닉스, ‘슈퍼컴퓨팅 2025’서 HBM4·차 세대 스토리지 등 AI 메모리 라인업 공개 TECH&AI  2025.11.24 ▲ 슈퍼컴퓨팅 2025에 마련된 SK하이닉스 부스 전경 SK하이닉스가 16일부터 21일까지(현지시간) 미국 세인트루이스(St. Louis)에서 열린 ‘슈퍼컴퓨팅 20 25(Super Computing 2025, 이하 SC 2025)’에 참가해 AI와 고성능 컴퓨팅(High-Performance C omputing, 이하 HPC) 시대를 위한 첨단 메모리 기술을 공개했다고 24일 밝혔다. ‘슈퍼컴퓨팅(SC)’은 1988년부터 매년 열리고 있는 세계 최대 규모의 고성능 컴퓨팅(HPC) 관련 글로 벌 콘퍼런스로, 기업·학계·연구기관 등의 전문가들이 한자리에 모여 최신 트렌드를 공유하고 협업 기회 를 창출하는 등 기술 발전 방향을 논의하는 자리다. 이번 행사에서는 AI와 HPC의 융합이 주요 화두로 다뤄졌다. 26. 4. 15. 오전 9:17 SK hynix Newsroom about:blank 1/5 올해 SK하이닉스는 ‘Memory, Powering AI and Tomorrow(메모리, AI와 미래를 움직이다)’를 주제 로 전시를 열"
+  },
+  {
+    "doc_id": "INTEL-2026-7F1A3467",
+    "title": "2504.09775v2",
+    "technology": "HBM4",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/2504.09775v2.pdf",
+    "content": "Understanding and Optimizing Multi-Stage AI Inference Pipelines Abhimanyu Rajeshkumar Bambhaniya1, Hanjiang Wu1, Suvinay Subramanian2, Sudarshan Srinivasan3, Souvik Kundu4, Amir Yazdanbakhsh5, Midhilesh Elavazhagan3, Madhu Kumar3, Tushar Krishna1 1Georgia Institute of Technology, 2Google, 3Intel, 4Intel Labs 5Google DeepMind, Corresponding email: abambhaniya3@gatech.edu Abstract—The rapid evolution of Large Language Models (LLMs) has driven the need for increasingly sophisticated inference pipelines and hardware platforms. Modern LLM serving extends beyond traditional prefill-decode workflows,"
+  },
+  {
+    "doc_id": "INTEL-2026-E90E6F32",
+    "title": "A NOVEL ARCHITECTURE FOR HIGH",
+    "technology": "PIM",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2024-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/A NOVEL ARCHITECTURE FOR HIGH.pdf",
+    "content": "arXiv:2411.17309v1  [cs.AR]  26 Nov 2024 PIM-AI: A NOVEL ARCHITECTURE FOR HIGH-EFFICIENCY LLM INFERENCE Cristobal Ortega, Yann Falevoz, Renaud Ayrignac UPMEM Grenoble contact@upmem.com ABSTRACT Large Language Models (LLMs) have become essential in a variety of applications due to their advanced language understanding and generation capabilities. However, their computational and memory requirements pose signiﬁcant challenges to traditional hardware architectures. Processing- in-Memory (PIM), which integrates computational units directly into memory chips, offers several advantages for LLM infer"
+  },
+  {
+    "doc_id": "INTEL-2026-EF2E084A",
+    "title": "AI 반도체 및 주도주 분석 리포트: HBM4와 CXL이 설계할 2026 메모리 슈퍼사이클 전망",
+    "technology": "HBM4",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2028-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/AI 반도체 및 주도주 분석 리포트: HBM4와 CXL이 설계할 2026 메모리 슈퍼사이클 전망.pdf",
+    "content": "http$%%www'noiseken'co'kr 광고 계측기전문!노이즈켄!정전기!시뮬레이션!전문 HBM$%정전기%시험기$%측정%장비%및%솔루션%개발$%EMI%발생장치 http$%%www'kcco'co'kr 광고 FA부품수입!케이씨씨오 PLC%센서%모타%엔코더$%독일%유럽지역%공장자동화%설비%전기%기계부품%전문수입 과거의%반도체%사이클이%수요와%공급의%단순한%수급%균형에%의해%결정되었다면$%현재%시장이%보여주 는%데이터가!증명하는!로직은!기술적!변곡점에!의한!구조적!성장입니다+ 전통적인%D램%업황의%회복세보다%AI%특화%메모리의%공급%부족이%시장의%지배적%변수로%작용하며$%지 체#및#주도주#분석#리포트$ 와#CXL이#설계할#2026#메모… 2%&25%&05(08 자본주의에서!개발자로!살… Search''' 자본주의에서 … 구독하기 표의%반전은%이미%시작되었습니다+ 데이터%분석가%.돈개.의%시각으로%볼%때$%지금의%시장은%단순한%호황을%넘어%반도체%아키텍처%자체가 재편되는%초입!단계에%진입해%있습니다+ 1\"#HBM4(#맞춤형#메모리#시대의#기술적#도래 HBM%고대역폭!메모리&은%더%이상%범용%부품이%아닌$%AI%가속기의%성능을%결정짓는%핵심%설계%자산 으로%격상되"
+  },
+  {
+    "doc_id": "INTEL-2026-F5C5101B",
+    "title": "CXL 2.0 상용화 원년 2026 완전 분석",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2028-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/CXL 2.0 상용화 원년 2026 완전 분석.pdf",
+    "content": "CXL 2.0 상용화 원년 2026 완전 분석: 차세대 메모리 인터페이스 표준화 + 삼성 CXL 2.0 상용화 원년 2026 완전 분석: 차세대 메모리 인터페이스 표준화 + 삼성 CXL 2.0 상용화 원년 2026 완전 분석: 차세대 메모리 인터페이스 표준화 + 삼성 CXL 2.0 상용화 원년 2026 완전 분석: 차세대 메모리 인터페이스 표준화 + 삼성 ·SK하이닉스·소부장 관련주 투자 가이드 총정리! ·SK하이닉스·소부장 관련주 투자 가이드 총정리! ·SK하이닉스·소부장 관련주 투자 가이드 총정리! ·SK하이닉스·소부장 관련주 투자 가이드 총정리! CXL 2.0 상용화 원년 핵심 수치 총정리: CXL 2.0 상용화 원년 핵심 수치 총정리: CXL 2.0 상용화 원년 핵심 수치 총정리: CXL 2.0 상용화 원년 핵심 수치 총정리: CXL 시장 규모: CXL 시장 규모: CXL 시장 규모: CXL 시장 규모: CXL D램 시장 2028년 125억달러(약 17조원), 전체 CXL 시장의 2028년 125억달러(약 17조원), 전체 CXL 시장의 2028년 125억달러(약 17조원), 전체 CXL 시장의 2028년 125억달러(약 17조원), 전체 CXL 시장"
+  },
+  {
+    "doc_id": "INTEL-2026-52358B39",
+    "title": "CXL 4.0 and the Interconnect Wars",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/CXL 4.0 and the Interconnect Wars.pdf",
+    "content": "CXL 4.0 and the Interconnect Wars: How AI Memory Is Reshaping Data Center Architecture CXL 4.0 specification released Nov 18 with PCIe 7.0, 128 GT/s, bundled ports. Panmnesia ships first CXL 3.2 fabric switch. UALink, Ultra Ethernet, Huawei UB-Mesh compete. Blake Crosley Jan 16, 20266 min readDisclaimer December 12, 2025 December 2025 Update: The CXL Consortium released CXL 4.0 on November 18, doubling bandwidth to 128 GT/s with PCIe 7.0 and introducing bundled ports for 1.5 TB/s connections. Panmnesia began sampling the industry's first CXL 3.2 fabric switch with port-based routing. Meanwhile"
+  },
+  {
+    "doc_id": "INTEL-2025-2D803D1D",
+    "title": "CXL_4.0-Webinar_December-2025_FINAL",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/CXL_4.0-Webinar_December-2025_FINAL.pdf",
+    "content": "Introducing the CXL 4.0 Specification December 4, 2025 CXL Board of Directors 280+ Member Companies Industry Open Standard for High Speed Communications Compute Express Link® and CXL® are trademarks of the Compute Express Link Consortium. 12/3/2025 CXL Specification Release Timeline Compute Express Link® and CXL® are registered trademarks of the Compute Express Link Consortium. September 2019 CXL 1.1 Specification Released November 2020 CXL 2.0 Specification Released August 2022 CXL 3.0 Specification Released March 2019 CXL 1.0 Specification Released November 2023 CXL 3.1 Specification Release"
+  },
+  {
+    "doc_id": "INTEL-2026-B259C1DC",
+    "title": "Enhancing CXL Memory Pods via Sparse Topology",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Enhancing CXL Memory Pods via Sparse Topology.pdf",
+    "content": "Octopus: Enhancing CXL Memory Pods via Sparse Topology Yuhong Zhong Fiodar Kazhamiaka Pantea Zardoshti Shuwei Teng Rodrigo Fonseca Mark D. Hill Daniel S. Berger Columbia University Microsoft Azure University of Wisconsin–Madison University of Washington Abstract The Compute Express Link (CXL) interconnect enables com- pute “pods” that pool memory across servers to reduce cost and improve efficiency. These pods also facilitate pairwise communication whose needs conflict with pooling. Impor- tantly, existing pod designs are small or require indirection through expensive switches. These conventio"
+  },
+  {
+    "doc_id": "INTEL-2026-4240F22B",
+    "title": "HBM4 양산·디램 수익성 동반 상승…올해 ‘메모리 황금기’ 온다 - 매일경제",
+    "technology": "HBM4",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/HBM4 양산·디램 수익성 동반 상승…올해 ‘메모리 황금기’ 온다 - 매일경제.pdf",
+    "content": "2026. 4. 15. 오전 10:01 HBM4 양산·디램 수익성 동반 상승…올해 ‘메모리 황금기’ 온다 - 매일경제 1페이지/7페이지 https://www.mk.co.kr/news/business/11949125 업데이트 : 2026.01.31 13:56 기업 > 기업·경영 HBM4 양산·디램 수익성 동반 상승…올해 ‘메모리 황금기’ 온다 K반도체 안서진 기자 재고 누적·가격 폭락 ‘메모리’ AI 산업 고부가가치 부품으로 “韓기업, 공급망 중심축될것” 번역 핵심요약 추천질문 관련종목 AI해설 편의기능 AI기능 1 지면보기 구독신청 매경미디어 로그인 회원가입 이더리움 - 0.75% - 0.75% - 0.75% - 0.75% 경제 금융 기업 증권 부동산 테크·과학 오피니언 정치 사회 국제 문화 스포츠 M 유튜브 프리미어 2026년 4월 15일 (수) 2026. 4. 15. 오전 10:01 HBM4 양산·디램 수익성 동반 상승…올해 ‘메모리 황금기’ 온다 - 매일경제 2페이지/7페이지 https://www.mk.co.kr/news/business/11949125 [카운터포인트리서치] 글로벌 메모리 반도체 시장이 호황기에 접어들며 줄줄이 최고 매출 기록을 갈아치우"
+  },
+  {
+    "doc_id": "INTEL-2026-9CC47325",
+    "title": "Intel Launches World’s First Systems Foundry Designed for the AI Era - Intel Newsroom",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "press_release",
+    "published_at": "2030-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Intel Launches World’s First Systems Foundry Designed for the AI Era - Intel Newsroom.pdf",
+    "content": "2026. 4. 15. 오전 9:48 Intel Launches World’s First Systems Foundry Designed for the AI Era - Intel Newsroom 1페이지/11페이지 https://newsroom.intel.com/intel-foundry/foundry-news-roadmaps-updates Intel announces expanded process roadmap, customers and ecosystem partners to deliver on ambition to be the No. FEBRUARY 21, 2024 Published Intel Foundry Intel Launches World’s First Systems Foundry Designed for the AI Era An intel manufacturing employee displays a test system-on-chip built on a glass substrate at an Intel fab in Chandler, Arizona, in December 2023. In February 2024, Intel Corporation launch"
+  },
+  {
+    "doc_id": "INTEL-2026-A7BB7520",
+    "title": "Intel Unveils Future-Generation Xeon with Robust Performance and Efficiency Architectures - Intel Newsroom",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "press_release",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Intel Unveils Future-Generation Xeon with Robust Performance and Efficiency Architectures - Intel Newsroom.pdf",
+    "content": "2026. 4. 15. 오전 9:48 Intel Unveils Future-Generation Xeon with Robust Performance and Efficiency Architectures - Intel Newsroom 1페이지/7페이지 https://newsroom.intel.com/artificial-intelligence/intel-unveils-future-generation-xeon Share AUGUST 28, 2023 Published Artiﬁcial Intelligence Listen to audio Intel Unveils Future-Generation Xeon with Robust Performance and Eﬃciency Architectures Newsroom Topic Type Press Hub Subscribe 2026. 4. 15. 오전 9:48 Intel Unveils Future-Generation Xeon with Robust Performance and Efficiency Architectures - Intel Newsroom 2페이지/7페이지 https://newsroom.intel.com/artificial"
+  },
+  {
+    "doc_id": "INTEL-2026-D4439E37",
+    "title": "JESD270-4A",
+    "technology": "HBM4",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/JESD270-4A.pdf",
+    "content": "JEDEC STANDARD High Bandwidth Memory (HBM4) DRAM JESD270-4A (Revision of JESD270-4, April 2025) November 2025 JEDEC SOLID STATE TECHNOLOGY ASSOCIATION Downloaded by bae baessi (beseo007@gmail.com) on Apr 14, 2026, 5:34 pm PDT skala NOTICE JEDEC standards and publications contain material that has been prepared, reviewed, and approved through the JEDEC Board of Directors level and subsequently reviewed and approved by the JEDEC legal counsel. JEDEC standards and publications are designed to serve the public interest through eliminating misunderstandings between manufacturers and purchasers, fac"
+  },
+  {
+    "doc_id": "INTEL-2026-714B081B",
+    "title": "Large-Scale Benchmarking",
+    "technology": "PIM",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Large-Scale Benchmarking.pdf",
+    "content": "PIM or CXL-PIM? Understanding Architectural Trade-offs Through Large-Scale Benchmarking I-Ting Lee∗ Department of Computer Science and Information Engineering National Cheng Kung University Tainan, Taiwan 0321iting@gmail.com Bao-Kai Wang∗ Department of Computer Science and Information Engineering National Cheng Kung University Tainan, Taiwan kk29880015@gmail.com Liang-Chi Chen Department of Computer Science and Information Engineering National Taiwan University Taipei, Taiwan d12922012@csie.ntu.edu.tw Wen Sheng Lim Department of Computer Science and Information Engineering National Taiwan Univ"
+  },
+  {
+    "doc_id": "INTEL-2026-0478EDF9",
+    "title": "Next-Gen Computing Systems_with_Compute_Express_Link",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "press_release",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Next-Gen Computing Systems_with_Compute_Express_Link.pdf",
+    "content": "1 Next-Gen Computing Systems with Compute Express Link: a Comprehensive Survey Chen Chen , Xinkui Zhao , Guanjie Cheng , Yuesheng Xu , Shuiguang Deng , and Jianwei Yin Abstract—Interconnection is crucial for computing systems. However, the current interconnection performance between pro- cessors and devices, such as memory devices and accelerators, significantly lags behind their computing performance, severely limiting the overall performance. To address this challenge, Intel proposes Compute Express Link (CXL), an open industry- standard interconnection. With memory semantics, CXL of- fers l"
+  },
+  {
+    "doc_id": "INTEL-2026-42B0BDAA",
+    "title": "Node-Spanning GPU Collectives with CXL Memory",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/Node-Spanning GPU Collectives with CXL Memory.pdf",
+    "content": "CCCL: Node-Spanning GPU Collectives with CXL Memory Pooling Dong Xu University of California, Merced Han Meng University of California, Merced Xinyu Chen Zhejiang University Dengcheng Zhu ByteDance Wei Tang ByteDance Fei Liu ByteDance Liguang Xie ByteDance Wu Xiang ByteDance Rui Shi ByteDance Yue Li ByteDance Henry Hu ByteDance Hui Zhang ByteDance Jianping Jiang Xconn-Tech Dong Li University of California, Merced Abstract Large language models (LLMs) training or inference across mul- tiple nodes introduces significant pressure on GPU memory and interconnect bandwidth. The Compute Express Link "
+  },
+  {
+    "doc_id": "INTEL-2026-EEFFD391",
+    "title": "PIM-CACHE",
+    "technology": "PIM",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/PIM-CACHE.pdf",
+    "content": "PIM-CACHE: High-Efficiency Content-Aware Copy for Processing-In-Memory Peterson Yuhala University of Neuchâtel Neuchâtel, Switzerland peterson.yuhala@unine.ch Mpoki Mwaisela University of Neuchâtel Neuchâtel, Switzerland mpoki.mwaisela@unine.ch Pascal Felber University of Neuchâtel Neuchâtel, Switzerland pascal.felber@unine.ch Valerio Schiavoni University of Neuchâtel Neuchâtel, Switzerland valerio.schiavoni@unine.ch Abstract Processing-in-memory (PIM) architectures bring computation closer to data, reducing the processor-memory transfer bottleneck in tra- ditional processor-centric designs. N"
+  },
+  {
+    "doc_id": "INTEL-2026-B8EC5E35",
+    "title": "U491ci-intel-foundry-hpc-ai-brief",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/U491ci-intel-foundry-hpc-ai-brief.pdf",
+    "content": "Platform Brief 1 AI and HPC demand high-performance silicon The explosive growth of generative and agentic AI is driving record demand for powerful, energy-efficient computing solutions. This has transformed semiconductor manufacturing to chiplet-based architectures, enabling the modular assembly of dies based on different nodes from various vendors, thereby boosting performance and reducing costs. Simultaneously, supply chains are being restructured to enhance resilience, mitigate geopolitical risk, and promote sustainability. Meeting these demands requires foundries to deliver advanced techn"
+  },
+  {
+    "doc_id": "INTEL-2026-B0672651",
+    "title": "emib-product-brief",
+    "technology": "HBM4",
+    "company": "Intel",
+    "source_type": "product_announcement",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/emib-product-brief.pdf",
+    "content": "Technology Brief EMIB 1 Advanced applications, such as AI, machine learning (ML), and high- performance computing (HPC), require high data throughput and low latency. Embedded Multi-die Interconnect Bridge (EMIB) improves semiconductor designs’ performance, power efficiency, and flexibility. EMIB enables you to integrate more components as needed, making it easier to scale up performance and functionality without complete system redesigns. EMIB is the industry’s first 2.5D interconnect solution using bridges embedded in the substrate. In high-volume manufacturing since 2017, EMIB features in p"
+  },
+  {
+    "doc_id": "INTEL-2026-D7ED256F",
+    "title": "intel-foundry-hpc-ai-brief-2",
+    "technology": "CXL",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/intel-foundry-hpc-ai-brief-2.pdf",
+    "content": "Platform Brief 1 AI and HPC demand high-performance silicon The explosive growth of generative and agentic AI is driving record demand for powerful, energy-efficient computing solutions. This has transformed semiconductor manufacturing to chiplet-based architectures, enabling the modular assembly of dies based on different nodes from various vendors, thereby boosting performance and reducing costs. Simultaneously, supply chains are being restructured to enhance resilience, mitigate geopolitical risk, and promote sustainability. Meeting these demands requires foundries to deliver advanced techn"
+  },
+  {
+    "doc_id": "INTEL-2026-9DDA7A3F",
+    "title": "언론사뷰",
+    "technology": "PIM",
+    "company": "Intel",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/intel/언론사뷰.pdf",
+    "content": "2026. 4. 15. 오전 10:03 언론사뷰 1페이지/3페이지 https://v.daum.net/v/20250219110012620?s=print_news 국내 연구진이 기존 시스템 대비 성능이 최대 11배 향상된 프로세싱-인-메모리(PIM) 반도체를 개발했다. PI M 반도체가 통신할 때 PIM 반도체 외부로 연결되는 중앙처리장치(CPU)를 통과하면서 발생하는 병목현상을 해결했다. 인공지능(AI) 및 빅데이터 응용 분야에서 PIM 반도체 활용성 향상에 기여할 것으로 기대된다. KAIST는 김동준 전기및전자공학부 교수 연구팀이 미국 노스이스턴대, 보스턴대, 스페인 무르시아대의 연구 진과 공동연구를 통해 ‘PIM 반도체 간 집합 통신에 특화된 인터커넥션 네트워크 아키텍처’를 통한 공동연구로 PIM 반도체의 통신 성능을 비약적으로 향상하는 기법을 개발했다고 19일 밝혔다. 연구팀은 기존 PIM 반도체의 메모리 내부 연산 장치 간 통신 구조의 한계를 밝혔다. 메모리 내부에 존재하는 박정연 기자 입력 2025. 2. 19. 11:00 최대 성능 11배 향상된 PIM 반도체 나왔다 KAIST 기존 시스템 대비 성능이 11배 향상된 프로세싱-인-메모리(PIM) 반도"
+  },
+  {
+    "doc_id": "NVIDIA-2026-7F1A3467",
+    "title": "2504.09775v2",
+    "technology": "HBM4",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/2504.09775v2.pdf",
+    "content": "Understanding and Optimizing Multi-Stage AI Inference Pipelines Abhimanyu Rajeshkumar Bambhaniya1, Hanjiang Wu1, Suvinay Subramanian2, Sudarshan Srinivasan3, Souvik Kundu4, Amir Yazdanbakhsh5, Midhilesh Elavazhagan3, Madhu Kumar3, Tushar Krishna1 1Georgia Institute of Technology, 2Google, 3Intel, 4Intel Labs 5Google DeepMind, Corresponding email: abambhaniya3@gatech.edu Abstract—The rapid evolution of Large Language Models (LLMs) has driven the need for increasingly sophisticated inference pipelines and hardware platforms. Modern LLM serving extends beyond traditional prefill-decode workflows,"
+  },
+  {
+    "doc_id": "NVIDIA-2026-52358B39",
+    "title": "CXL 4.0 and the Interconnect Wars",
+    "technology": "CXL",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/CXL 4.0 and the Interconnect Wars.pdf",
+    "content": "CXL 4.0 and the Interconnect Wars: How AI Memory Is Reshaping Data Center Architecture CXL 4.0 specification released Nov 18 with PCIe 7.0, 128 GT/s, bundled ports. Panmnesia ships first CXL 3.2 fabric switch. UALink, Ultra Ethernet, Huawei UB-Mesh compete. Blake Crosley Jan 16, 20266 min readDisclaimer December 12, 2025 December 2025 Update: The CXL Consortium released CXL 4.0 on November 18, doubling bandwidth to 128 GT/s with PCIe 7.0 and introducing bundled ports for 1.5 TB/s connections. Panmnesia began sampling the industry's first CXL 3.2 fabric switch with port-based routing. Meanwhile"
+  },
+  {
+    "doc_id": "NVIDIA-2025-2D803D1D",
+    "title": "CXL_4.0-Webinar_December-2025_FINAL",
+    "technology": "CXL",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/CXL_4.0-Webinar_December-2025_FINAL.pdf",
+    "content": "Introducing the CXL 4.0 Specification December 4, 2025 CXL Board of Directors 280+ Member Companies Industry Open Standard for High Speed Communications Compute Express Link® and CXL® are trademarks of the Compute Express Link Consortium. 12/3/2025 CXL Specification Release Timeline Compute Express Link® and CXL® are registered trademarks of the Compute Express Link Consortium. September 2019 CXL 1.1 Specification Released November 2020 CXL 2.0 Specification Released August 2022 CXL 3.0 Specification Released March 2019 CXL 1.0 Specification Released November 2023 CXL 3.1 Specification Release"
+  },
+  {
+    "doc_id": "NVIDIA-2026-07AFCA26",
+    "title": "Challenges and Research Directions for Large Language Model Inference Hardware",
+    "technology": "HBM4",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/Challenges and Research Directions for Large Language Model Inference Hardware.pdf",
+    "content": "​Challenges and Research Directions​ ​for Large Language Model Inference Hardware​ ​Xiaoyu Ma and David Patterson, Google​ ​We highlight four promising research opportunities to improve​​Large Language Model​​inference for datacenter​ ​AI:​​High Bandwidth Flash​​for 10X memory capacity with​​HBM-like bandwidth; Processing-Near-Memory and​ ​3D memory-logic stacking for high memory bandwidth; and low-latency interconnect to speedup​ ​communication. We also review their applicability for mobile devices.​ ​INTRODUCTION​ ​When one author started his career in 1976, ~40% of the papers at computer ar"
+  },
+  {
+    "doc_id": "NVIDIA-2026-D4439E37",
+    "title": "JESD270-4A",
+    "technology": "HBM4",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/JESD270-4A.pdf",
+    "content": "JEDEC STANDARD High Bandwidth Memory (HBM4) DRAM JESD270-4A (Revision of JESD270-4, April 2025) November 2025 JEDEC SOLID STATE TECHNOLOGY ASSOCIATION Downloaded by bae baessi (beseo007@gmail.com) on Apr 14, 2026, 5:34 pm PDT skala NOTICE JEDEC standards and publications contain material that has been prepared, reviewed, and approved through the JEDEC Board of Directors level and subsequently reviewed and approved by the JEDEC legal counsel. JEDEC standards and publications are designed to serve the public interest through eliminating misunderstandings between manufacturers and purchasers, fac"
+  },
+  {
+    "doc_id": "NVIDIA-2026-12A449D6",
+    "title": "Microbenchmarking NVIDIA’s Blackwell Architecture- An in-depth Architectural Analysis",
+    "technology": "HBM4",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2026-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/Microbenchmarking NVIDIA’s Blackwell Architecture- An in-depth Architectural Analysis.pdf",
+    "content": "Microbenchmarking NVIDIA’s Blackwell Architecture: An in-depth Architectural Analysis Aaron Jarmusch dept. of Computer Information Sciences University of Delaware Newark, US Sunita Chandrasekaran dept. of Computer Information Sciences University of Delaware Newark, US schandra@udel.edu Abstract— As GPU architectures rapidly evolve to meet the overcoming demands of exascale computing and machine learning, the performance implications of architectural innovations remain poorly understood across diverse workloads. NVIDIA’s Blackwell (B200) generation introduce significant architectural advances i"
+  },
+  {
+    "doc_id": "NVIDIA-2026-39D361AE",
+    "title": "blackwell-vs-hopper-choosing-the-right-architecture",
+    "technology": "HBM4",
+    "company": "NVIDIA",
+    "source_type": "industry_report",
+    "published_at": "2025-01-01",
+    "source_url": "/Users/kgw/skala/0413_aiagent_mini/Documents/ai-service/Agentic_RAG_Supervisor_Demo/data/raw_pdfs/nvidia/blackwell-vs-hopper-choosing-the-right-architecture.mdx",
+    "content": "--- title: Blackwell vs Hopper - Choosing the right NVIDIA GPU architecture description: This page provides information about the NVIDIA Blackwell and Hopper GPU architectures. tags: NVIDIA GPU cloud instance dates: validation: 2025-12-05 posted: 2025-12-05 --- A GPU architecture defines the underlying design of NVIDIA’s Graphics Processing Units (GPUs), optimized for accelerating AI training, inference, and high-performance computing (HPC) workloads. * **[Blackwell](https://www.nvidia.com/en/us/data-center/technologies/blackwell-architecture/)**, announced in 2024 and shipping in late 2025, r"
+  }
+]
