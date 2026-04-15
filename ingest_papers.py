@@ -13,11 +13,6 @@ ingest_papers.py
   ├── intel/         ← 인텔 관련 PDF
   └── nvidia/        ← 엔비디아 관련 PDF
 
-파일명 규칙 (자동 메타데이터 추출):
-  {technology}_{연도}_{설명}.pdf
-  예: HBM4_2025_hot_chips_keynote.pdf
-      CXL_2025_product_announcement.pdf
-      PIM_2025_isscc_paper.pdf
 
 ※ 폴더명에서 기업명이 자동으로 추출되므로 파일명에 회사명 불필요
 
